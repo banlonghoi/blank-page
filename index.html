@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bàn Long</title>
+    <meta name="description" content="Truyện, tiểu thuyết hay, full dịch">
+
+    <style>
+    .center {
+      margin: auto;
+      width: 50%;
+      // border: 3px solid #73AD21;
+      padding: 10px;
+    }
+    </style>
+
+    <script type="text/javascript">
+    var target_link = "https://banlong.pro";
+    </script>
+    
+    <!-- Start Single Page Apps for GitHub Pages -->
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // MIT License
+      // https://github.com/rafgraph/spa-github-pages
+      // This script checks to see if a redirect is present in the query string,
+      // converts it back into the correct url and adds it to the
+      // browser's history using window.history.replaceState(...),
+      // which won't cause the browser to attempt to load the new url.
+      // When the single page app is loaded further down in this file,
+      // the correct url will be waiting in the browser's history for
+      // the single page app to route accordingly.
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          var target_path = l.pathname.slice(0, -1) + decoded + l.hash;
+          window.history.replaceState(null, null, target_path);
+          target_link += target_path;
+          console.log(target_link);
+        }
+      }(window.location))
+
+      document.addEventListener("DOMContentLoaded", () => {
+        document.getElementById("target_link").href = target_link;
+      });
+    </script>
+    <!-- End Single Page Apps for GitHub Pages -->
+
+  </head>
+  <body>
+    <div id="root" class="center" style="font-size: larger;">
+      <p>Lưu hoặc nhớ ngay link rút gọn <a href="https://banlong.top">banlong.top</a> để truy cập sẽ tự chuyển đến tên miền mới khi không vào được.</p>
+  
+      <p class="center"><a href="https://banlong.pro" id="target_link">Bấm vào đây để tiếp tục đọc truyện</a></p>
+    </div>
+  </body>
+</html>
